@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage{notestex}
+
+\begin{document}
+\title{FLTeX Minimal Start}
+\author{Your Name}
+\affiliation{
+Creator at FLibrary\\
+Undergraduate Student at the University of \LaTeX\\
+}
+\emailAdd{YOUREMAIL@example.org}
+\maketitle
+\newpage
+\pagestyle{fancynotes}
+
+\section{Introduction}
+This document is a guide on the minimal start for the template.
+
+To starting use the template, start your \texttt{main.tex} with the following:
+\begin{verbatim}
+        \documentclass[10pt]{article}
+        \usepackage{path/to/notestex}
+        
+        \begin{document}
+        \title{FLTeX Minimal Start}
+        \author{Your Name}
+        \affiliation{
+        Creator at FLibrary\\
+        Undergraduate Student at the University of \LaTeX\\
+        }
+        \emailAdd{YOUREMAIL@example.org}
+        \maketitle
+        \newpage
+        \pagestyle{fancynotes}
+        
+        \end{document}
+\end{verbatim}
+
+A few things to notice:
+\begin{enumerate}
+\item You shall modify the author, affiliation, and other fields accordingly
+\item \textbf{replace \texttt{path/to/notestex} with the actual path!}
+\item \textbf{Use Lua\LaTeX or Xe\LaTeX to compile your document.}
+\end{enumerate}
+
+If you would like to write Chinese, you may use the following as your \texttt{main.tex}:
+\marginnote{\footnotesize Due to the fact that this guide is written in an English environment, we didn't use Chinese in the code snippet. However, it can.}
+
+\begin{verbatim}
+        \documentclass[10pt]{ctex}
+        \usepackage{path/to/notestex}
+        
+        \begin{document}
+        \title{FLTeX Minimal Start}
+        \author{Your Chinese Name}
+        \affiliation{
+        Creator at FLibrary\\
+        Undergraduate Student at the University of \LaTeX\\
+        }
+        \emailAdd{YOUREMAIL@example.org}
+        \maketitle
+        \newpage
+        \pagestyle{fancynotes}
+        
+        \end{document}
+\end{verbatim}
+
+\end{document}
