@@ -32,7 +32,7 @@
                 (nixpkgs.lib.filesystem.listFilesRecursive ./${
                 path});
               # In case some dependencies fails to be detected
-              extraTexPackages = { inherit (texlive) ctex latex-bin latexmk collection-fontsrecommended; };
+              extraTexPackages = { inherit (texlive) ctex latex-bin latexmk collection-fontsrecommended tikzfill; };
             };
 
           pathToName = path: (replaceStrings [ "/" ] [ "+" ] path);
